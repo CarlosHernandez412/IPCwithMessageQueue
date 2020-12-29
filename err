@@ -1,0 +1,9 @@
+msgget(0x410302af, IPC_CREAT|0666)      = 16023552
+strace: Process 3080 attached
+[pid  3080] msgrcv(16023552,  <unfinished ...>
+[pid  3079] msgsnd(16023552, {1, "yo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}, 112, 0) = 0
+[pid  3080] <... msgrcv resumed> {1, "yo\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0\0"...}, 112, 0, 0) = 112
+[pid  3080] +++ exited with 0 +++
+--- SIGCHLD {si_signo=SIGCHLD, si_code=CLD_EXITED, si_pid=3080, si_uid=10992, si_status=0, si_utime=0, si_stime=0} ---
+msgctl(16023552, IPC_RMID, NULL)        = 0
++++ exited with 0 +++
